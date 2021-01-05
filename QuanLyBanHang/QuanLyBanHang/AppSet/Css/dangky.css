@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'R';
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: "R";
+  background-color: blue;
+}
+
+.--flex-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end !important;
+      -ms-flex-pack: end !important;
+          justify-content: flex-end !important;
+}
+
+.dangky {
+  position: absolute;
+  width: 70%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 20px;
+  padding: 30px 20px;
+  max-width: 540px;
+}
+
+.dangky h2 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.dangky div {
+  margin: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.dangky div input {
+  background-color: transparent;
+  padding: 5px;
+  width: 80%;
+  border: none;
+  border-bottom: 1px solid blue;
+  font-size: 18px;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.dangky div input:focus {
+  outline: none;
+  border-bottom: 1px solid red;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.dangky div input::-webkit-input-placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.dangky div input:-ms-input-placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.dangky div input::-ms-input-placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.dangky div input::placeholder {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.dangky div .btn-main {
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid blue;
+}
+
+.dangky div .btn-main:hover {
+  background-color: white;
+  color: blue;
+}
+
+.dangky div a {
+  text-decoration: none;
+  font-size: 16px;
+  color: black;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.dangky div a:hover {
+  color: blue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+/*# sourceMappingURL=dangky.css.map */

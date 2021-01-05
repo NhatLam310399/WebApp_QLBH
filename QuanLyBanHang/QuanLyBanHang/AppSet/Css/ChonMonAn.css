@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'R';
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: "R";
+  background-color: #7d8dfdab;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+.btn-main {
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid blue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.btn-main:hover {
+  background-color: white;
+  color: blue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.list_Mon {
+  margin: 15px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (24%)[4];
+      grid-template-columns: repeat(4, 24%);
+  grid-gap: 10px;
+  width: 100%;
+}
+
+.list_Mon .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #7d8dfdab;
+  border-radius: 8px;
+  background-color: #eaeefd;
+  position: relative;
+  overflow: hidden;
+}
+
+.list_Mon .item:hover .btnChon {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.list_Mon .item .btnChon {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #0000004a;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_Mon .item .btnChon p {
+  font-size: 40px;
+  color: blue;
+}
+
+.list_Mon .item .btnChon p i {
+  background: white;
+  padding: 7px 9px;
+  border-radius: 50%;
+}
+
+.list_Mon .item div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.list_Mon .item div img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.list_Mon .item .tenMon, .list_Mon .item .giaMon {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: black;
+}
+
+.list_Mon .item .tenMon {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.list_Mon .item .giaMon {
+  font-size: 14px;
+  font-weight: 500;
+}
+/*# sourceMappingURL=ChonMonAn.css.map */

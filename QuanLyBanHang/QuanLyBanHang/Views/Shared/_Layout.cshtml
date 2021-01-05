@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title Quản lý bán hàng</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" href="~/AppSet/vendor/fontawesome/font-awesome.css" />
+    <link rel="stylesheet" href="~/AppSet/vendor/metisMenu/metisMenu.css" />
+    <link rel="stylesheet" href="~/AppSet/vendor//animate/animate.css" />
+    <!-- App styles -->
+
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css" />
+    <link rel="stylesheet" href="~/fonts/pe-icon-7-stroke/css/helper.css">
+
+    <!-- CSS styles custom -->
+    <link rel="stylesheet" href="~/AppSet/Css/Menu.css" />
+    <link rel="stylesheet" href="~/AppSet/Css/ChonMonAn.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+</head>
+<body>
+    <header>
+        <p class="vitri">Vị trí bàn: <span class="id-ban">B - 12</span>  </p>
+        <div class="timkiem">
+            <input type="text" placeholder="Nhập tên thức ăn">
+            <a href="" class="btn-main"> Tìm kiếm </a>
+        </div>
+    </header>
+    <main>
+        @RenderBody()
+
+    </main>
+    <footer>
+        <p><i class="far fa-copyright"></i>  2021 Copy right Gsot</p>
+    </footer>
+
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="~/AppSet/js/main.js"></script>
+</body>
+</html>

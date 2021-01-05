@@ -1,0 +1,12 @@
+.container {
+    width: 500px;
+    height: 50vh;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: lightgrey;
+    border: 10px solid darkgrey;
+    border-radius: 20px;
+    padding: 30px;
+}

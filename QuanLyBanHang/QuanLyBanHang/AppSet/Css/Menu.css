@@ -1,0 +1,284 @@
+@font-face {
+  font-family: 'R';
+  src: url("/fonts/Roboto-Regular.woff2") format("woff2"), url("/fonts/Roboto-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: fallback;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  font-family: "R";
+  background-color: #7d8dfdab;
+  max-width: 1920px;
+  overflow-x: hidden;
+}
+
+.btn-main {
+  padding: 10px 25px;
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 15px;
+  border: 1px solid blue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.btn-main:hover {
+  background-color: white;
+  color: blue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+header {
+  padding: 0 15px;
+  width: 100vw;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .vitri {
+  padding: 15px 0;
+  font-size: 16px;
+  color: black;
+}
+
+header .vitri .id-ban {
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+header .timkiem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 0;
+}
+
+header .timkiem input {
+  padding: 5px 10px;
+  width: 100%;
+  border: 1px solid #7d8dfdab;
+  border-radius: 8px;
+  background-color: #eaeefd;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+header .timkiem input::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+header .timkiem input:-ms-input-placeholder {
+  font-style: italic;
+}
+
+header .timkiem input::-ms-input-placeholder {
+  font-style: italic;
+}
+
+header .timkiem input::placeholder {
+  font-style: italic;
+}
+
+header .timkiem input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 0 5px 0 #7d8dfdab;
+          box-shadow: 0 0 5px 0 #7d8dfdab;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+header .timkiem .btn-main {
+  margin-left: 5px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 125px;
+}
+
+main .dsMenu {
+  margin: 15px 0;
+  width: 100%;
+  padding: 0 50px;
+}
+
+main .dsMenu_list {
+    margin: 0 auto;
+  max-width: 768px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (25%)[4];
+      grid-template-columns: repeat(4, 25%);
+}
+
+main .dsMenu .item_menu {
+  min-height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1px solid lightgray;
+  border-style: dashed;
+  border-radius: 10px;
+}
+
+main .dsMenu .item_menu div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .dsMenu .item_menu div img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .dsMenu .item_menu p {
+  padding: 10px 0;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 600;
+  color: black;
+  text-align: center;
+}
+
+main .monAnOrderNhieu, main .ThucUongOrderNhieu {
+  margin: 30px 0;
+  width: 100%;
+  padding: 0 15px;
+}
+
+main .monAnOrderNhieu h2, main .ThucUongOrderNhieu h2 {
+  font-size: 20px !important;
+  color: black !important;
+  width: 100%;
+  text-align: left;
+  margin: 10px 0;
+}
+
+main .monAnOrderNhieu .list_monAn .item_monAn, main .monAnOrderNhieu .list_monAn .item_ThucUong, main .monAnOrderNhieu .list_ThucUong .item_monAn, main .monAnOrderNhieu .list_ThucUong .item_ThucUong, main .ThucUongOrderNhieu .list_monAn .item_monAn, main .ThucUongOrderNhieu .list_monAn .item_ThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_monAn, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid #7d8dfdab;
+  border-radius: 8px;
+  background-color: #eaeefd;
+  margin: 0 5px;
+}
+
+main .monAnOrderNhieu .list_monAn .item_monAn div,
+main .monAnOrderNhieu .list_monAn .item_ThucUong div,
+main .monAnOrderNhieu .list_ThucUong .item_monAn div,
+main .monAnOrderNhieu .list_ThucUong .item_ThucUong div
+, main .ThucUongOrderNhieu .list_monAn .item_monAn div,
+main .ThucUongOrderNhieu .list_monAn .item_ThucUong div,
+main .ThucUongOrderNhieu .list_ThucUong .item_monAn div,
+main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .monAnOrderNhieu .list_monAn .item_monAn div img, main .monAnOrderNhieu .list_monAn .item_ThucUong div img, main .monAnOrderNhieu .list_ThucUong .item_monAn div img, main .monAnOrderNhieu .list_ThucUong .item_ThucUong div img, main .ThucUongOrderNhieu .list_monAn .item_monAn div img, main .ThucUongOrderNhieu .list_monAn .item_ThucUong div img, main .ThucUongOrderNhieu .list_ThucUong .item_monAn div img, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong div img {
+  width: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .monAnOrderNhieu .list_monAn .item_monAn .tenmonAn, main .monAnOrderNhieu .list_monAn .item_monAn .giamonAn,
+main .monAnOrderNhieu .list_monAn .item_monAn .tenThucUong, main .monAnOrderNhieu .list_monAn .item_monAn .giaThucUong, main .monAnOrderNhieu .list_monAn .item_ThucUong .tenmonAn, main .monAnOrderNhieu .list_monAn .item_ThucUong .giamonAn,
+main .monAnOrderNhieu .list_monAn .item_ThucUong .tenThucUong, main .monAnOrderNhieu .list_monAn .item_ThucUong .giaThucUong, main .monAnOrderNhieu .list_ThucUong .item_monAn .tenmonAn, main .monAnOrderNhieu .list_ThucUong .item_monAn .giamonAn,
+main .monAnOrderNhieu .list_ThucUong .item_monAn .tenThucUong, main .monAnOrderNhieu .list_ThucUong .item_monAn .giaThucUong, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .tenmonAn, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .giamonAn,
+main .monAnOrderNhieu .list_ThucUong .item_ThucUong .tenThucUong, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .giaThucUong, main .ThucUongOrderNhieu .list_monAn .item_monAn .tenmonAn, main .ThucUongOrderNhieu .list_monAn .item_monAn .giamonAn,
+main .ThucUongOrderNhieu .list_monAn .item_monAn .tenThucUong, main .ThucUongOrderNhieu .list_monAn .item_monAn .giaThucUong, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .tenmonAn, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .giamonAn,
+main .ThucUongOrderNhieu .list_monAn .item_ThucUong .tenThucUong, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .giaThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .tenmonAn, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .giamonAn,
+main .ThucUongOrderNhieu .list_ThucUong .item_monAn .tenThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .giaThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .tenmonAn, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .giamonAn,
+main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .tenThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .giaThucUong {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  color: black;
+}
+
+main .monAnOrderNhieu .list_monAn .item_monAn .tenThucUong, main .monAnOrderNhieu .list_monAn .item_monAn .tenmonAn, main .monAnOrderNhieu .list_monAn .item_ThucUong .tenThucUong, main .monAnOrderNhieu .list_monAn .item_ThucUong .tenmonAn, main .monAnOrderNhieu .list_ThucUong .item_monAn .tenThucUong, main .monAnOrderNhieu .list_ThucUong .item_monAn .tenmonAn, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .tenThucUong, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .tenmonAn, main .ThucUongOrderNhieu .list_monAn .item_monAn .tenThucUong, main .ThucUongOrderNhieu .list_monAn .item_monAn .tenmonAn, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .tenThucUong, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .tenmonAn, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .tenThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .tenmonAn, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .tenThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .tenmonAn {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+main .monAnOrderNhieu .list_monAn .item_monAn .giaThucUong, main .monAnOrderNhieu .list_monAn .item_monAn .giamonAn, main .monAnOrderNhieu .list_monAn .item_ThucUong .giaThucUong, main .monAnOrderNhieu .list_monAn .item_ThucUong .giamonAn, main .monAnOrderNhieu .list_ThucUong .item_monAn .giaThucUong, main .monAnOrderNhieu .list_ThucUong .item_monAn .giamonAn, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .giaThucUong, main .monAnOrderNhieu .list_ThucUong .item_ThucUong .giamonAn, main .ThucUongOrderNhieu .list_monAn .item_monAn .giaThucUong, main .ThucUongOrderNhieu .list_monAn .item_monAn .giamonAn, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .giaThucUong, main .ThucUongOrderNhieu .list_monAn .item_ThucUong .giamonAn, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .giaThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_monAn .giamonAn, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .giaThucUong, main .ThucUongOrderNhieu .list_ThucUong .item_ThucUong .giamonAn {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+footer {
+  padding: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer p {
+  font-size: 16px;
+  color: black;
+}
+/*# sourceMappingURL=menu.css.map */
